@@ -183,7 +183,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@markup.strike"] = {fg = c.fg, fmt = 'strikethrough'},
         ["@markup.strong"] = {fg = c.fg, fmt = 'bold'},
         ["@markup.underline"] = {fg = c.fg, fmt = 'underline'},
-        ["@module"] = colors.Yellow,
+        ["@module"] = colors.Grey,
         ["@none"] = colors.Fg,
         ["@number"] = colors.Orange,
         ["@number.float"] = colors.Orange,
@@ -203,7 +203,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@note"] = colors.Fg,
         ["@warning"] = colors.Fg,
         ["@danger"] = colors.Fg,
-        ["@type"] = colors.Yellow,
+        ["@type"] = colors.Blue,
         ["@type.builtin"] = colors.Orange,
         ["@variable"] = {fg = c.fg, fmt = cfg.code_style.variables},
         ["@variable.builtin"] = {fg = c.red, fmt = cfg.code_style.variables},
@@ -559,12 +559,12 @@ hl.plugins.telescope = {
 
 hl.plugins.snacks = {
     -- Dashboard
-    SnacksDashboardHeader = colors.Yellow,
+    SnacksDashboardHeader = colors.Green,
     SnacksDashboardFooter = { fg = c.dark_red, fmt = "italic" },
     SnacksDashboardSpecial = { fg = c.dark_red, fmt = "bold" },
-    SnacksDashboardDesc = colors.Cyan,
-    SnacksDashboardIcon = colors.Cyan,
-    SnacksDashboardKey = colors.Blue,
+    SnacksDashboardDesc = colors.Green,
+    SnacksDashboardIcon = colors.Green,
+    SnacksDashboardKey = colors.Green,
 
     -- Picker
     SnacksPicker = hl.common.Normal,
